@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="javascript/wow.min.js"></script>
+    <title>Sensor DHT11</title>
+  </head>
+  <body>
+    <header>
+      <div class="ancho">
+        <figure>
+          <img src="./img/merida.png" alt="" class="logo">
+        </figure>
+        <h1>Sensor DHT11</h1>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="ancho wow animate__animated animate__fadeInLeftBig animate__delay-1s">
+        <h2>
+          Detector de Temperatura
+          <br />
+          y
+          <br />
+          Humedad
+        </h2>
+        <br />
+      </div>
+    </section>
+
+    <!-- AQUI IRA LA GRAFICA -->
+
+    <section class="centrar ">
+
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2516015/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperatura&type=line"></iframe> <br><br>
+      
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2516015/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humedad&type=line"></iframe> <br>
+     
+
+    </section>
+
+    <!-- fin -->
+
+    
+    <footer>
+      <p>Copyright© 2024 Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
